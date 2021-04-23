@@ -1,8 +1,6 @@
-const mongoose = require("mongoose");
 const express = require("express");
 const expressHbs = require("express-handlebars");
 const { response } = require("express");
-const Schema = mongoose.Schema;
 const app = express();
 const hbs = require("hbs");
 const jsonParser = express.json();
@@ -15,13 +13,6 @@ const http = require("http"),
     path = require("path"),
     fs = require("fs"),
     port = process.argv[2] || 8080;
-
-// ---------------------MongoDB-------------------------
-
-/* mongoose.connect("mongodb+srv://cvonAdmin:cvonChess12@cluster0.a3btm.mongodb.net/firstSite?retryWrites=true&w=majority", { useUnifiedTopology: true } , function (err) {
-    if (err) return console.log(err);
-    
-}); */
 
 // установка движка и путя статических файлов
 app.engine("hbs", expressHbs({
