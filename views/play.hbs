@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<head>
+  	<meta charset="UTF-8">
+	<title>play</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="chessboard-1.0.0.css" >
+	<link rel="stylesheet" type="text/css" href="play/play.css">
+ </head>
+ <body>
+ 	<div class="conteiner">
+	<div id="myBoard"  class="myBoard "></div>
+	<div class="pole "> 
+		<div class="border1"> asdaas</div>
+		<label class="border1 ">FEN:</label>
+		<div id="fen" class="border1 "></div>
+		<label class="border1 ">PGN:</label>
+		<div id="pgn" ></div>
+		 <!-- здесь кнопочки ничья, сдаться, перевернуть -->
+		<div> 
+			<button id="flipOrientationBtn">Flip orientation</button> <button>Предложить нечью</button>
+			<button>Сдаться</button> 
+		</div>
+		<!-- Если партия против компа то добавить кнопки вернуть назад и вперед промотать в конец и начало  -->
+		<!-- когда партия закончится предложить проаналищировать партию и вывести Счет: типо кто выйграл б,ч -->
+		<div>
+			<label class="border1 ">Status:</label>
+			<div id="status" class="border1 "></div>
+		</div>
+	</div>
+	<div>Чат на soket.io</div>
+		<ul id="messages"></ul>
+		<form id="form" action="">
+			<input id="input" autocomplete="off" /><button>Send</button>
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="chess.js"></script>
+	<script src="chessboard-1.0.0.js"></script>
+	<script src="play/play.js"></script>
+ </body>
+</html>

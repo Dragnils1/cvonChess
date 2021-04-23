@@ -1,0 +1,212 @@
+body {
+	font-family: sans-serif;
+	margin:0;
+	padding: 0;
+	background-color: #f9ffff;
+}
+
+.card{
+	display: inline-block;
+	margin-left: 5%;
+}
+
+/* общие свойста */
+
+header a{
+	text-decoration: none;
+	color: orange;
+}
+header a:hover{
+	color: black;
+}
+.content{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+.box{
+	border:2px solid black ;
+}
+.second{
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 2.5fr 1.5fr ;
+}
+.second img{
+	max-height: inherit;
+}
+
+.mainChess{
+	display: grid;
+	grid-template-rows: 100% ;
+	grid-template-columns: 1fr 1fr 1fr ;
+}
+.mainImage a{
+	text-decoration: none;
+	color: orange;
+}
+.mainImage img{
+	max-width: 80%;
+}
+.border{
+	border:2px solid orange ;
+	border-radius: 8px;
+}
+.text{
+	text-align: center;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: orange;
+	font-size: 30px;
+}
+.buttonPlay{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+input:focus{
+	background-color: #eee;
+}
+form{
+	height: 0;
+	overflow: hidden;
+	max-width: 30%;
+	text-align: center;
+	margin-left: 35%;
+}
+form div{
+	margin: 5px 0px 5px 5px;
+}
+
+.form_button{
+	margin-right: 10px;
+}
+.span{
+	color: orange;
+	float: right;
+}
+
+.time{
+	text-align: center;
+	color: orange;
+}
+
+.blackTheme{
+	background-color: black;
+	opacity: 0.8;
+}
+a{
+	text-decoration: none;
+}
+.chessProblem{
+	max-width: 100%;
+}
+.headerButton{
+	background-color: orange;
+}
+.mainImage:hover , .time:hover{
+	margin: 5px 5px 0px 5px;
+	background-color: #f3d2f2;
+	border:2px solid rgb(255, 88, 88)
+}
+/*От 1020px и больше*/
+@media all and (min-width: 1020px) {
+
+.box {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+.content{
+	grid-template-rows: 415px 500px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin-top: 20px;
+}
+header a{
+	line-height: 60px;
+	font-size: 50px;
+	margin:  10px 10px ;
+}
+
+.span{
+	line-height: 50px;
+	font-size: 40px;
+	margin-right: 2%;
+	margin-top: 10px;
+	margin-right: 8%;
+}
+
+.span:hover{
+	box-shadow:
+	1px 1px 1px 1px orange,
+    2px 2px 2px 2px orange,
+    3px 3px orange,
+    4px 4px orange,
+    5px 5px orange;
+  	-webkit-transform: translateX(-7px);
+  	transform: translateX(-7px);
+	color: black;
+}
+
+.mainImage img{
+	height: 200px;
+}
+
+.textSecond{
+	font-size: 30px;
+}
+.board1{
+	width: 400px;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+.time{
+	font-size: 1.2em;
+	margin:15px 5% 0 5%;
+}
+}
+
+/*до 1020px*/
+
+@media all and (max-width: 1020px){
+
+.content{
+	grid-template-rows: 360px 445px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin-top: 20px;
+	display: block;
+}
+
+header a{
+	line-height: 60px;
+	font-size: 50px;
+	margin:  10px 10px;
+}
+
+.span{
+	line-height: 50px;
+	font-size: 40px;
+	margin: 5px 10px 0 0;
+}
+
+.mainImage img{
+	height: 150px;
+}
+
+.textSecond{
+	font-size: 20px;
+}
+
+.board1{
+	width: inherit;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+.time{
+	font-size: 1.2em;
+	margin:5px 10px 0 0;
+}
+
+}
+ 
+
